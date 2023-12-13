@@ -1,0 +1,162 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Inconsolata:wght@300&family=McLaren&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+    font-family: 'Roboto', sans-serif;
+    background-color: #e1e0e0;
+}
+  
+
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+nav{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+    /* border-bottom: 2px solid #dadada; */
+    padding-bottom: 1vh;
+}
+
+nav h1{
+    height: 2vh;
+    width: 2vw;
+}
+.nav-child i{
+    font-size: 1.6vw;
+    font-weight: 800px;
+    display: none;
+}
+
+.nav-child{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    cursor: pointer;
+}
+
+.content{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    /* padding-top: 3vh; */
+}
+ .content .left{
+    display: inline;
+    height: 50%;
+    width: 50%;
+    padding: 1.2vw 1.2vw;
+ }
+
+ .content .left h1{
+     font-size: 4vw;
+     font-weight: 1250;
+     line-height: 6vw;
+     
+ }
+ span{
+    color: #10A37F;
+ }
+
+ .content .left p{
+    padding: 1vw 0;
+    line-height: 1.8;
+    color: #666;
+    font-size: 600;
+ }
+
+ .content .left button{
+    padding: 12px 55px;
+    border: 1.8px solid #a2c7bd ;
+    border-radius: 5px;
+    color: white;
+    background-color:#10A37F;
+    font-size: medium;
+    font-weight: 570;
+    cursor: pointer;
+ }
+
+ .content .right{
+    display: inline;
+    height: 50%;
+ }
+
+ img{
+    height: 80vh;
+    width: 48vw;
+ }
+
+ .footer{
+    /* background-color: #222222; */
+    padding-top: 1.5vw ;
+    height: 1vh;
+    width: 98.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: #737373;;
+   
+ }
+ .footer li{
+   cursor: pointer;
+
+ }
+
+ 
+@media (max-width:480px) {
+    nav{
+        background-color: lightseagreen;
+        /* color: #ffff; */
+        height: 15vw;
+        padding: 0 3vw;
+        
+    }
+    nav h2{
+        background-color: lightseagreen;
+       font-size: large;
+       font-weight: 600;
+    }
+    .nav-child h4{
+        display: none;
+    }
+    .nav-child i {
+        display: block;
+        font-size: 5vw;
+        font-weight: 800;
+        cursor: pointer;
+        background-color: lightseagreen;
+    }
+    .content{
+        padding-top: 0.05vw ;
+        display: block;
+
+    }
+    .content .left{
+        padding: 1vw 1vw;
+    }
+    .content .left p{
+        padding: 3.8vw 0.4vw;
+    }
+
+    .content .left h1{
+        font-size: 9.5vw;
+        font-weight: 700;
+        line-height: 12vw;
+    }
+    img{
+        width: 100vw;
+        height: 45vh;
+        padding: 3.2vh 0;
+    }
+}
